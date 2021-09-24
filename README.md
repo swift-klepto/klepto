@@ -62,6 +62,6 @@ Using the run command will first build your application then run it using nxlink
 For instance, this build the application using the release configuration, then sends the NRO to the Switch at 10.0.0.14 before starting the nxlink server: `klepto run -c release -a 10.0.0.14 -s`.
 
 # Cleaning your package
-You can clean build artifacts by using `klepto clean`, which is simply a shortcut to `klepto package clean`.
+You can clean build artifacts by using `klepto clean`, which is simply a shortcut to `klepto package clean`. This will also delete any NRO and ELF files in the working directory.
 
 This is not a standard Swift feature.
