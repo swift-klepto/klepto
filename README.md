@@ -3,8 +3,16 @@ Main repository of klepto toolchain.
 
 This does not contain any actual code (the toolchain itself is split in multiple repositories) but has the user guide and releases.
 
-# How to use klepto
+# Host dependencies
 First, you must have in your `PATH` the host Swift toolchain of the same version as klepto. This is necessary to run SwiftPM (it needs host Swift shared libs).
+
+Then, you must have Python 3 installed.
+
+Finally, you must have a devkitPro environment setup with devkitA64 and libnx installed. The `DEVKITPRO` environment variable must be properly set.
+
+Due to a limitation in clang modulemap files, your devkitPro installation MUST be placed in `/opt/devkitpro`. The path to libnx headers is hardcoded in the modulemap when the toolchain is compiled. You can work around that by changing the hardcoded path in the toolchain files if you want.
+
+# How to use klepto
 
 Download the toolchain from the releases tab of this repository and extract it somewhere. Add that to your `PATH` and you're all set.
 
