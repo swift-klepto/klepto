@@ -37,7 +37,7 @@ There are a few things to know:
     - `os(Linux)` is true
     - `__linux__` and `__unix__` are both defined
 
-All features of the language are otherwise available, as well as compiling C / CXX code and linking against Switch portlibs.
+All features of the language are otherwise available, as well as compiling C / CXX code and linking against Switch portlibs. Include path and linking path is automatically setup for those.
 
 # Package manifest differences
 Any Swift package won't work on Switch out of the box. There are a few differences in how you build the manifest:
