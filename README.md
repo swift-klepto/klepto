@@ -26,7 +26,7 @@ There are a few things to know:
     - This applies to both the package manifest (`Package.swift`) and the actual code, allowing you to make hybrid packages
     - You can also use `os(libnx)` if you want but it will emit warnings when compiling with a regular Swift toolchain (does not apply to the manifest)
 - The Switch platform counts as Linux so:
-    - `os(linux)` is true
+    - `os(Linux)` is true
     - `__linux__` and `__unix__` are both defined
 
 All features of the language are otherwise available.
